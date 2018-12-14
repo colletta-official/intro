@@ -52,6 +52,35 @@ li p{
 	font-family: "777Kidbutterfly", sans-serif;
 }
 
+section{
+	display:flex;
+	flex-flow:column;
+	width:100%;
+	height:calc(100vh - 100px);
+}
+.pic{
+	order:1;
+	max-width:calc(100vh - 100px);
+	width:50%;
+	height:100%;
+}
+.sectionTitle{
+	order:2;
+}
+.sectionTitle hr{
+	display:inline-block;
+	border-top: 2px solid #ccc;
+	width:100px;
+	margin:0.3em 0px;
+}
+.sectionTitle span{
+	font-family: "777Kidbutterfly", sans-serif;
+	margin:0px 20px;
+}
+.contentsWrap{
+	order:3;
+}
+
 @media all and (max-width:700px){
 	header{
 		flex-flow:column;
