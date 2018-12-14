@@ -2,6 +2,10 @@
 	margin:0px;
 	padding:0px;
 }
+a:link{
+	text-decoration: none!important;
+	cursor: pointer;
+}
 header{
 	display:flex;
 	flex-flow:row wrap;
@@ -28,11 +32,14 @@ ul li{
 	width:150px;
 	text-align:center;
 	cursor:pointer;
+	font-size:22px;
+	color:#f398a5;
+	font-family: "777Kidbutterfly", sans-serif;
 }
 
 @media all and (max-width:700px){
 	header{
-		flex-flow:column wrap;
+		flex-flow:column;
 		justify-content:flex-start;
 		height:150px;
 	}
@@ -40,10 +47,11 @@ ul li{
 		padding:10px 0px;
 	}
 	ul{
+		height:100px;
 		padding:0px;
 	}
 	ul li{
 		max-width:150px;
-		width:33.333333%;
+		width:33.333333vw;
 	}
 }
