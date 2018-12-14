@@ -4,4 +4,5 @@ $(document).ready(function(){
 
 $("#container").mCustomScrollbar({ 
         theme:"colletta-scroll"
+	scrollButtons:{ enable: false }
 });
