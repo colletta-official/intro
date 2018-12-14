@@ -3,32 +3,47 @@
 	padding:0px;
 }
 header{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+	align-items:center;
 	position:fixed;
 	top:0px;
 	left:0px;
+	background-color:white;
+	box-shadow: 0px 5px 3px RGBA(0,0,0,0.3);
 	width:100%;
-	font-size:1.5em;
-}
-header.white{
-	color:#ffffff;
+	height:100px;
 }
 header img{
-	position:relative;
-	float:left;
-	font-weight:700;
-	top:0px;
-	left:0px;
-	padding:30px;
+	width:160px;
+	padding:10px 0px 10px 60px;
 }
 ul{
-	float:right;
-	width:450px;
+	padding-right:30px;
 	list-style:none;
 }
 ul li{
 	display:inline-block;
-	width:90px;
-	padding:30px 15px;
+	width:150px;
 	text-align:center;
 	cursor:pointer;
+}
+
+@media all and (max-width:700px){
+	header{
+		flex-flow:column wrap;
+		justify-content:flex-start;
+		height:150px;
+	}
+	header img{
+		padding:10px 0px;
+	}
+	ul{
+		padding:0px;
+	}
+	ul li{
+		max-width:150px;
+		width:33.333333%;
+	}
 }
