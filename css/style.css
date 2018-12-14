@@ -32,6 +32,3 @@ ul li{
 	text-align:center;
 	cursor:pointer;
 }
-ul li:last-child{
-	width:40px;
-}
