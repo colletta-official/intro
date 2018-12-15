@@ -13,12 +13,12 @@ $(document).ready(function(){
 			console.log(this, $(this).next()[0], $(this).prev()[0]);
 			if (delta < 0) {
 				if ($(this).next()[0] != undefined) {
-					moveTop = $(this).next().offset().top;
+					moveTop = $(this).next().offset().top -150;
 				}
 			}
 			else {
 				if ($(this).prev()[0] != undefined) {
-					moveTop = $(this).prev().offset().top;
+					moveTop = $(this).prev().offset().top -150;
 				}
 			}
 			$(".scrollBlind").stop().animate(
