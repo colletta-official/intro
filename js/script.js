@@ -40,7 +40,7 @@ $(document).ready(function(){
 		});
 	});
 });
-$(".scrollBlind").scroll(function() {
+$(".scrollBlind")[0].onscroll=function(){
 	var $el = $('circle');
 	var nth;
 	var scr=$(".scrollBlind").scrollTop();
@@ -51,7 +51,7 @@ $(".scrollBlind").scroll(function() {
 	$el.removeClass('on');
 	$el.eq(nth).addClass('on');
 	console.log(nth, $el);
-});
+}
 $(window).resize(function(){
 	offsetsReset();
 });
