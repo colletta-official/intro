@@ -45,13 +45,15 @@ ul li{
 	height:100px;
 	align-items:center;
 	justify-content:center;
-	cursor:pointer;
 }
 li p{
 	font-size:1.875em;
 	text-decoration:none;
 	color:#feccd1;
 	font-family: "777Kidbutterfly", sans-serif;
+}
+li:hover{
+	color:#f398a5;
 }
 
 @media all and (max-width:700px){
