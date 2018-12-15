@@ -73,6 +73,9 @@ circle{
 	margin:5px 10px;
 	cursor:pointer;
 }
+.on{
+	background-color:#f398a5;
+}
 
 section{
 	display:flex;
