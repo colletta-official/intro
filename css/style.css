@@ -45,7 +45,7 @@ ul li{
 	cursor:pointer;
 }
 li p{
-	font-size:30px;
+	font-size:1.875em;
 	text-decoration:none;
 	color:#f398a5;
 	font-family: "777Kidbutterfly", sans-serif;
@@ -87,7 +87,7 @@ section{
 }
 .sectionTitle span{
 	font-family: "777Kidbutterfly", sans-serif;
-	font-size: 36px;
+	font-size: 2.25em;
 	margin:0px 20px;
 }
 .contentsWrap{
@@ -109,7 +109,7 @@ section{
 
 .content {
 	margin: 10px 10%;
-	font-size: 15px;
+	font-size: 0.9em;
 }
 
 @media all and (max-width:700px){
@@ -156,6 +156,9 @@ section{
 	
 }
 @media all and (max-width:425px){
+	*{
+		font-size:0.75em;
+	}
 	header{
 		height:100px;
 	}
