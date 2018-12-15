@@ -11,17 +11,17 @@ $(document).ready(function(){
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null;
 			console.log(this, $(this).next()[0], $(this).prev()[0]);
-			console.log($(".scrollBlind").scrollTop());
+			console.log("current:", $(".scrollBlind").scrollTop());
 			if (delta < 0) {
 				if ($(this).next()[0] != undefined) {
 					moveTop = $(this).next().offset().top -100;
-					console.log($(this).next().offset(), moveTop);
+					console.log("next:", $(this).next()[0], $(this).next().offset(), moveTop);
 				}
 			}
 			else {
 				if ($(this).prev()[0] != undefined) {
-					moveTop = $(this).prev().offset().top -100;
-					console.log($(this).prev().offset(), moveTop);
+					moveTop = $(this).prev().offset().top - 100;
+					console.log("prev:", $(this).prev()[0], $(this).prev().offset(), moveTop);
 				}
 			}
 			$(".scrollBlind").stop().animate(
