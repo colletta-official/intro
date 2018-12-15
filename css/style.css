@@ -151,6 +151,11 @@ section{
 	.view{
 		height:calc(100vh - 150px);
 	}
+	
+	nav{
+		display:none;
+	}
+	
 	section{
 		min-height:calc(100vh - 150px);
 		height:auto;
