@@ -136,7 +136,7 @@ section{
 	margin: 10px 10%;
 	font-size: 0.8em;
 }
-.contentsWrap p{
+.tar{
 	margin: 0px 10%;
 	font-family: "777Kidbutterfly", sans-serif;
 	font-size: 1.5em;
@@ -146,8 +146,8 @@ section{
 	width:80%;
 }
 .f{
-	margin:0;
-	font-size: 1.5em;
+	margin:10px 0px;
+	font-size: 2em;
 	font-family: "777Kidbutterfly", sans-serif;
 	color:#f398a5;
 }
