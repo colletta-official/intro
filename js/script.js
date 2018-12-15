@@ -15,6 +15,7 @@ $(document).ready(function(){
 				if ($(this).next()[0] != undefined) {
 					moveTop = currentScroll+$(this).outerHeight();
 				}
+				else moveTop = 99999;
 			}
 			else {
 				if ($(this).prev()[0] != undefined) {
@@ -28,11 +29,10 @@ $(document).ready(function(){
 					scrollTop: moveTop + 'px'
 					}, {
 					duration: 500, complete: function () {
-						currentScroll=moveTop;
+						currentScroll=$(".scrollBlind").scrollTop();
 					}
 				});
 			}
-			console.log(moveTop, currentScroll);
 		});
 	});
 });
