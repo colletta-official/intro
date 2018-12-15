@@ -15,7 +15,6 @@ $(document).ready(function(){
 				if ($(this).next()[0] != undefined) {
 					moveTop = currentScroll+$(this).outerHeight();
 				}
-				else moveTop = 99999;
 			}
 			else {
 				if ($(this).prev()[0] != undefined) {
