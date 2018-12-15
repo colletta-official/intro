@@ -1,10 +1,7 @@
 var currentScroll=0;
 var offsets=[0];
 $(document).ready(function(){
-	for(var i=1;i<=$("section").length;i++)
-	{
-		offsets[i]=offsets[i-1]+$("section").eq(i-1).height();
-	}
+	offsetsReset();
 	$("section").each(function () {
 		$(this).on("mousewheel DOMMouseScroll", function (e) {
 			if($(document).width()>700)
@@ -54,7 +51,18 @@ $(window).scroll(function() {
 	$el.removeClass('on');
 	$el.eq(nth).addClass('on');
 });
+$(window).resize(function(){
+	offsetsReset();
+});
 function linkmove(where)
 {
         $('.scrollBlind').animate({scrollTop : offsets[where]}, 500);
+}
+function offsetsReset()
+{
+	offsets[0]=0;
+	for(var i=1;i<=$("section").length;i++)
+	{
+		offsets[i]=offsets[i-1]+$("section").eq(i-1).height();
+	}
 }
