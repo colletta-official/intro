@@ -15,13 +15,13 @@ $(document).ready(function(){
 			if (delta < 0) {
 				if ($(this).next()[0] != undefined) {
 					moveTop = $(this).next().offset().top -100;
-					console.log(moveTop);
+					console.log($(this).next().offset(), moveTop);
 				}
 			}
 			else {
 				if ($(this).prev()[0] != undefined) {
 					moveTop = $(this).prev().offset().top -100;
-					console.log(moveTop);
+					console.log($(this).prev().offset(), moveTop);
 				}
 			}
 			$(".scrollBlind").stop().animate(
