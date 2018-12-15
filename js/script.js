@@ -26,7 +26,10 @@ $(document).ready(function(){
 			{
 				scrollTop: moveTop + 'px'
 				}, {
-				duration: 500, complete: function () {currentScroll=moveTop;}
+				duration: 500, complete: function () {
+					currentScroll=moveTop;
+					console.log(currentScroll, scrollTop(), "completed");
+				}
 			});
 			console.log(moveTop, currentScroll);
 		});
