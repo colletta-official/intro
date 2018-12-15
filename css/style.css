@@ -22,7 +22,7 @@ header{
 	flex-flow:row wrap;
 	justify-content:space-between;
 	align-items:center;
-	position:fixed;
+	position:absolute;
 	top:0px;
 	left:0px;
 	background-color:white;
@@ -53,31 +53,62 @@ li p{
 
 section{
 	display:flex;
-	flex-flow:column;
+	flex-flow: column wrap;
 	width:100%;
 	height:calc(100vh - 100px);
 }
 .pic{
 	order:1;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
 	max-width:calc(100vh - 100px);
 	width:50%;
+	height:100%;
+	overflow:hidden;
+}
+.pic img{
 	height:100%;
 }
 .sectionTitle{
 	order:2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* width:50%; */
+	height: 80px;
 }
 .sectionTitle hr{
 	display:inline-block;
-	border-top: 2px solid #ccc;
+	border: 1px solid #ccc;
 	width:100px;
 	margin:0.3em 0px;
 }
 .sectionTitle span{
 	font-family: "777Kidbutterfly", sans-serif;
+	font-size: 36px;
 	margin:0px 20px;
 }
 .contentsWrap{
 	order:3;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	/* align-items: center; */
+	min-width: 50%;
+	width: calc( 100vw - 100vh + 100px);
+	height: calc( 100% - 80px);
+}
+.contentsWrap h2{
+	margin: 10px 10%;
+	font-family: "777Kidbutterfly", sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+.content {
+	margin: 10px 10%;
+	font-size: 15px;
 }
 
 @media all and (max-width:700px){
