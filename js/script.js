@@ -13,6 +13,7 @@ $(document).ready(function(){
 			var moveTop = null;
 			if (delta < 0) {
 				if ($(this).next()[0] != undefined) {
+					console.log(this,$(this).next()[0]);
 					moveTop = currentScroll+$(this).outerHeight();
 				}
 			}
