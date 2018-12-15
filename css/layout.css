@@ -40,9 +40,11 @@ ul{
 	list-style:none;
 }
 ul li{
-	display:inline-block;
+	display:inline-flex;
 	width:150px;
-	text-align:center;
+	height:100%;
+	align-items:center;
+	justify-content:center;
 	cursor:pointer;
 }
 li p{
