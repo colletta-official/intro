@@ -50,6 +50,7 @@ $(window).scroll(function() {
 	}
 	$el.removeClass('on');
 	$el.eq(nth).addClass('on');
+	console.log(nth, $el);
 });
 $(window).resize(function(){
 	offsetsReset();
