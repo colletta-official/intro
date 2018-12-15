@@ -40,7 +40,7 @@ $(document).ready(function(){
 		});
 	});
 });
-$(window).scroll(function() {
+$(".scrollBlind").scroll(function() {
 	var $el = $('circle');
 	var nth;
 	var scr=$(".scrollBlind").scrollTop();
