@@ -1,7 +1,9 @@
 @import url("layout.css");
 li:nth-child(1){
-	color:#f398a5;
 	border-bottom:5px solid #f398a5;
+}
+li:nth-child(1) p{
+	color:#f398a5;
 }
 aside{
 	z-index:7;
