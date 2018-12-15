@@ -53,6 +53,7 @@ li p{
 }
 
 aside{
+	z-index:7;
 	display:flex;
 	position:fixed;
 	flex-flow: column wrap;
