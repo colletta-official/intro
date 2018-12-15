@@ -28,7 +28,7 @@ $(document).ready(function(){
 				}, {
 				duration: 500, complete: function () {
 					currentScroll=moveTop;
-					console.log(currentScroll, scrollTop(), "completed");
+					console.log(currentScroll, $(".scrollBlind").scrollTop(), "completed");
 				}
 			});
 			console.log(moveTop, currentScroll);
