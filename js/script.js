@@ -9,16 +9,19 @@ $(document).ready(function(){
 				if (window.opera) delta = -delta;
 			}
 			else if (event.detail) delta = -event.detail / 3;
-			var moveTop = null
+			var moveTop = null;
 			console.log(this, $(this).next()[0], $(this).prev()[0]);
+			console.log($(".scrollBlind").scrollTop());
 			if (delta < 0) {
 				if ($(this).next()[0] != undefined) {
 					moveTop = $(this).next().offset().top -100;
+					console.log(moveTop);
 				}
 			}
 			else {
 				if ($(this).prev()[0] != undefined) {
 					moveTop = $(this).prev().offset().top -100;
+					console.log(moveTop);
 				}
 			}
 			$(".scrollBlind").stop().animate(
