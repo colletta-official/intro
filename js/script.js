@@ -54,3 +54,7 @@ $(window).scroll(function() {
 	$el.removeClass('on');
 	$el.eq(nth).addClass('on');
 });
+function linkmove(where)
+{
+        $('.scrollBlind').animate({scrollTop : offsets[where]}, 500);
+}
