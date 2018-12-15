@@ -52,7 +52,7 @@ li p{
 	color:#feccd1;
 	font-family: "777Kidbutterfly", sans-serif;
 }
-li:hover{
+li:hover p{
 	color:#f398a5;
 }
 
