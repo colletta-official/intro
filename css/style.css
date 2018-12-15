@@ -67,6 +67,7 @@ circle{
 	width:10px;
 	height:10px;
 	border:2px solid #f398a5;
+	border-radius:20px;
 	background-color:transparent;
 	margin:5px 10px;
 	cursor:pointer;
