@@ -3,7 +3,7 @@ var offsets=[0];
 $(document).ready(function(){
 	for(var i=1;i<=$("section").length;i++)
 	{
-		offsets[i]=offset[i-1]+$("section").eq(i-1).height();
+		offsets[i]=offsets[i-1]+$("section").eq(i-1).height();
 	}
 	$("section").each(function () {
 		$(this).on("mousewheel DOMMouseScroll", function (e) {
