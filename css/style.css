@@ -97,7 +97,7 @@ section{
 	justify-content: center;
 	min-width: 50vw;
 	width: calc( 100vw - 100vh + 100px);
-	height: calc( 100vw - 80px);
+	height: calc( 100% - 80px);
 }
 .contentsWrap h2{
 	margin: 10px 10%;
