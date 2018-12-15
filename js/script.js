@@ -13,7 +13,6 @@ $(document).ready(function(){
 			var moveTop = null;
 			if (delta < 0) {
 				if ($(this).next()[0] != undefined) {
-					console.log(this,$(this).next()[0]);
 					moveTop = currentScroll+$(this).outerHeight();
 				}
 			}
@@ -22,15 +21,17 @@ $(document).ready(function(){
 					moveTop = currentScroll-$(this).outerHeight();
 				}
 			}
-			$(".scrollBlind").stop().animate(
+			if(moveTop != null)
 			{
-				scrollTop: moveTop + 'px'
-				}, {
-				duration: 500, complete: function () {
-					currentScroll=moveTop;
-					console.log(currentScroll, $(".scrollBlind").scrollTop(), "completed");
-				}
-			});
+				$(".scrollBlind").stop().animate(
+				{
+					scrollTop: moveTop + 'px'
+					}, {
+					duration: 500, complete: function () {
+						currentScroll=moveTop;
+					}
+				});
+			}
 			console.log(moveTop, currentScroll);
 		});
 	});
