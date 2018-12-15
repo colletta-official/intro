@@ -136,11 +136,6 @@ section{
 	margin: 10px 10%;
 	font-size: 0.8em;
 }
-.f{
-	font-size: 1.5em;
-	font-family: "777Kidbutterfly", sans-serif;
-	color:#f398a5;
-}
 .contentsWrap p{
 	margin: 0px 10%;
 	font-family: "777Kidbutterfly", sans-serif;
@@ -150,6 +145,13 @@ section{
 	margin: 0px 10%;
 	width:80%;
 }
+.f{
+	margin:0;
+	font-size: 1.5em;
+	font-family: "777Kidbutterfly", sans-serif;
+	color:#f398a5;
+}
+
 
 @media all and (max-width:700px){
 	header{
