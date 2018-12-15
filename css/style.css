@@ -52,7 +52,7 @@ li p{
 	font-family: "777Kidbutterfly", sans-serif;
 }
 
-nav{
+aside{
 	display:flex;
 	position:fixed;
 	width:60px;
@@ -152,7 +152,7 @@ section{
 		height:calc(100vh - 150px);
 	}
 	
-	nav{
+	aside{
 		display:none;
 	}
 	
