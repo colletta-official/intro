@@ -153,17 +153,22 @@ section{
 		min-height: calc( 100vh - 100vw -230px);
 		height:auto;
 	}
-	
+	.contentsWrap h2{
+		margin-top:20px;
+	}
+	.content{
+		margin-top:0px;
+	}
 }
 @media all and (max-width:425px){
-	*{
+	body{
 		font-size:0.75em;
 	}
 	header{
 		height:100px;
 	}
 	header img{
-		width:53.333333px;
+		width:106.666666px;
 		padding:6.666px 0px;
 	}
 	ul{
@@ -189,5 +194,4 @@ section{
 		min-height: calc( 100vh - 100vw - 150px);
 		height:auto;
 	}
-	
 }
