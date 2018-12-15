@@ -1,3 +1,4 @@
+var currentScroll=0;
 $(document).ready(function(){
 	$("section").each(function () {
 		$(this).on("mousewheel DOMMouseScroll", function (e) {
@@ -12,19 +13,19 @@ $(document).ready(function(){
 			var moveTop = null;
 			if (delta < 0) {
 				if ($(this).next()[0] != undefined) {
-					moveTop += $(this).outerHeight();
+					moveTop = currentScroll+$(this).outerHeight();
 				}
 			}
 			else {
 				if ($(this).prev()[0] != undefined) {
-					moveTop -= $(this).outerHeight();
+					moveTop = currentScroll-$(this).outerHeight();
 				}
 			}
 			$(".scrollBlind").stop().animate(
 			{
 				scrollTop: moveTop + 'px'
 				}, {
-				duration: 500, complete: function () {}
+				duration: 500, complete: function () {currentScroll=moveTop;}
 			});
 		});
 	});
