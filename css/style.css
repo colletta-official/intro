@@ -55,18 +55,20 @@ li p{
 aside{
 	display:flex;
 	position:fixed;
-	width:60px;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 40px;
 	height:calc(100vh - 100px);
 	top:100px;
 	right:0px;
 }
 circle{
 	display:block;
-	width:20px;
-	height:20px;
+	width:10px;
+	height:10px;
 	border:2px solid #f398a5;
 	background-color:transparent;
-	margin:10px 20px;
+	margin:5px 10px;
 	cursor:pointer;
 }
 
