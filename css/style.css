@@ -134,20 +134,20 @@ section{
 }
 .content {
 	margin: 10px 10%;
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
-.u{
+.f{
 	font-size: 1.5em;
 	font-family: "777Kidbutterfly", sans-serif;
 	color:#f398a5;
 }
 .contentsWrap p{
-	margin: 10px 10%;
+	margin: 0px 10%;
 	font-family: "777Kidbutterfly", sans-serif;
 	font-size: 1.5em;
 }
 .contentsWrap img{
-	margin: 10px 10%;
+	margin: 0px 10%;
 	width:80%;
 }
 
