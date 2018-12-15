@@ -12,7 +12,6 @@ $(document).ready(function(){
 		}
 		$el.removeClass('on');
 		$el.eq(nth).addClass('on');
-		console.log(nth, $el);
 	};
 	$("section").each(function () {
 		$(this).on("mousewheel DOMMouseScroll", function (e) {
