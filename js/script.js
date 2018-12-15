@@ -56,7 +56,14 @@ $(window).resize(function(){
 });
 function linkmove(where)
 {
-        $('.scrollBlind').animate({scrollTop : offsets[where]}, 500);
+        $(".scrollBlind").stop().animate(
+	{
+		scrollTop: offsets[where]
+		}, {
+		duration: 500, complete: function () {
+			currentScroll=$(".scrollBlind").scrollTop();
+		}
+	});
 }
 function offsetsReset()
 {
