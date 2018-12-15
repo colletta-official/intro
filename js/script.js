@@ -12,12 +12,12 @@ $(document).ready(function(){
 			var moveTop = null
 			console.log(this, $(this).next()[0], $(this).prev()[0]);
 			if (delta < 0) {
-				if ($(this).next() != undefined) {
+				if ($(this).next()[0] != undefined) {
 					moveTop = $(this).next().offset().top;
 				}
 			}
 			else {
-				if ($(this).prev() != undefined) {
+				if ($(this).prev()[0] != undefined) {
 					moveTop = $(this).prev().offset().top;
 				}
 			}
