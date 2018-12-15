@@ -10,7 +10,7 @@ $(document).ready(function(){
 			}
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null
-			console.log(this, $(this).next());
+			console.log(this, $(this).next()[0], $(this).prev()[0]);
 			if (delta < 0) {
 				if ($(this).next() != undefined) {
 					moveTop = $(this).next().offset().top;
