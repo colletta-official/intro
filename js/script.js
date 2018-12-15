@@ -46,12 +46,12 @@ $(".scrollBlind")[0].onscroll=function(){
 	var scr=$(".scrollBlind").scrollTop();
 	for(nth=0;nth<offsets.length-1;nth++)
 	{
-		if(offsets[nth]<scr && offsets[nth+1]>scr) break;
+		if(offsets[nth]<=scr && offsets[nth+1]>scr) break;
 	}
 	$el.removeClass('on');
 	$el.eq(nth).addClass('on');
 	console.log(nth, $el);
-}
+};
 $(window).resize(function(){
 	offsetsReset();
 });
