@@ -136,6 +136,9 @@ section{
 	.contentsWrap *{
 		margin-top:0px;
 	}
+	.contentsWrap .f{
+		margin:5px;
+	}
 }
 @media all and (max-width:425px){
 	section{
