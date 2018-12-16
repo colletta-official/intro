@@ -115,6 +115,7 @@ section{
 	color:#7897cb;
 	font-weight: normal;
 	font-size: 2.5em;
+	word-break: keep-all;
 }
 .content {
 	margin: 10px 10%;
