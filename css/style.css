@@ -25,9 +25,38 @@ circle{
 	background-color:transparent;
 	margin:5px 10px;
 	cursor:pointer;
+	transition: background-color 0.5s ease-in;
+}
+clrcle:hover{
+	background-color:#f398a5;
 }
 .on{
 	background-color:#f398a5;
+}
+
+.ttt {
+    font-size: 0.8em;
+    width: 70px;
+    position: relative;
+    top: -50%;
+    padding: 0px 5px;
+    left: -82.5px;
+    opacity: 0;
+    text-align: right;
+    overflow: hidden;
+    transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ttt p {
+    position: relative;
+    left: 100%;
+    opacity: 1;
+    transition: left 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+circle:hover .ttt p {
+    left: 0%;
+}
+circle:hover .ttt {
+    opacity: 1;
 }
 
 section{
