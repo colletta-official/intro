@@ -45,6 +45,7 @@ clrcle:hover{
 	text-align: right;
 	overflow: hidden;
 	transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+	pointer-events:none;
 }
 .ttt p {
 	font-family: "777Kidbutterfly", sans-serif;
